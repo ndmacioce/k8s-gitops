@@ -32,6 +32,7 @@ spec:
         matchNames:
           - default
           - networking
+          - longhorn-system
       name: "you"
       customApps:
         - name: Some External Cluster Service
@@ -119,7 +120,7 @@ spec:
         tls:
           - hosts:
               - "hajimari.${SECRET_DOMAIN}"
-            secretName: "hajimari-tls"
+        1    secretName: "hajimari-tls"
     persistence:
       data:
         enabled: true
